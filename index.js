@@ -12,14 +12,19 @@ const flavorCounts = {};
 // Iterate through array of flavors
 for(let i = 0; i < flavorArray.length; i++) {
   const flavor = flavorArray[i] // vanilla
+  // If it's not in the object
   if (!flavorCounts[flavor]) {
+    // Add the flavor to the object with a count of 1
     flavorCounts[flavor] = 1
+    // If it is in the object
   } else {
+    // Increase the count by 1
     flavorCounts[flavor] += 1
-    console.log(flavorCounts)
   }
 };
 
+// Console log the object
+console.log(flavorCounts)
 
 
 // {
